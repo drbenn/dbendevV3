@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>danbennett.dev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <nav class="">
+      <div class="nav-links">
+        <!-- <div>
+          <img class="dan-image" src="./img/dan-pixlr-alex.png" alt="">
+        </div> -->
+        <div class="nav-link-group"><a href="#about">About</a>
+          <span class="nav-link-icon">
+            <a href="#about"><img src="./img/nav/info.png" id="aboutIcon" alt=""></a>
+         
+          </div>
+        <div class="nav-link-group"><a href="#projects">Projects</a>
+          <span class="nav-link-icon">
+            <a href="#projects"><img src="./img/nav/coding.png" id="projectsIcon" alt=""></a>
+      </span>
+        </div>
+        <div class="nav-link-group">
+        <a href="#contact">Contact</a>
+        <span class="nav-link-icon">
+          <a href="#contact"><img src="./img/nav/identification.png" id="contactIcon" alt=""></a>
+          
+        </span>
+      </div>
+
+      <input type="checkbox" id="darkModeCheckbox" onchange="darkModeToggle()" />
+      <div class="dark-mode-toggle">
+        <img id="darkModeImage" src="./img/nav/day-and-night.png" alt="">
+
+      </div>
+
+    </div>
+    </nav>
+
+
+    <div class="about" id="about">
+      <p class="about-text"><span class="text-accent">Hello, my name is Dan.</span><img src="./img/dan.png"  class="dan-img" alt="Dan"></p>
+      <p class="about-subtext">I am a software engineer concentrating on front-end applications and interactives.</p>
+      <p class="about-subtext" id="projects">I like to create tools and new environments - currently focusing on the Angular framework.</p>
+      
+    </div>
+      
+
+    <div class="featured-projects">
+    <div class="section-title" >Featured Projects</div>
+
+
+   
+      
+      <div class="portfolio-container">
+
+
+
+        <div class="card-view-wrapper">
+
+          <div class="card-tilt-container">
+              <div class="card-title">Lite-Brite</div>
+              <div class="card-subtitle">Fun Creative Project</div>
+              <div class="card-image">
+                <img src="./img/card/preview/lite-brite.PNG" />
+              </div>
+              <!-- <div class="featured-detail-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, vero illo laboriosam corrupti adipisci pariatur ex eum autem? Eaque ad quis quaerat a porro rem, facere quae molestias. Quo animi expedita unde, minima cum quaerat nemo molestiae rem eveniet, suscipit, repellat labore. Officiis 
+              </div> -->
+              <div class="card-body-links-grid">
+
+
+                <div class="live-link-image">
+                 
+                    <img  class="card-link-img liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" >
+               
+                  </div>
+                <div >
+                  <a href="https://drbenn.github.io/lite-brite/" target="_blank" class="live-link-text">Live Demo</a>
+                </div>
+
+                <div class="github-repo-image">
+                  <a href="" target="_blank">
+                    <img class="card-link-img githubIcon githubIcon" src="./img/card/icons/github.png" alt="github repository">
+                  </a>
+                </div>
+                  
+                <div>
+                  <a href="https://github.com/drbenn/lite-brite" target="_blank"  class="github-repo-text">Github Repository</a>
+                </div>
+
+                </div>
+
+              <div class="card-body-icons">
+             
+                  <img class="card-icon" src="./img/card/icons/js.png" alt="javascript">
+         
+           
+                  <img class="card-icon" src="./img/card/icons/html.png" alt="html">
+            
+                
+                  <img class="card-icon" src="./img/card/icons/css.png" alt="css">
+               
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="card-view-wrapper">
+
+          <div class="card-tilt-container">
+            <div class="card-title">Worthie</div>
+            <div class="card-subtitle">Personal Finance Tracker</div>
+            <div class="card-image">
+              <img src="./img/card/preview/worthie-fin-tracker.png" />
+            </div>
+            <div class="card-body-links-grid">
+
+              <div class="live-link-image">
+                <a href="https://danbennett.dev/worthie/" target="_blank">
+                  <img  class="card-link-img liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="">
+                </a>
+                </div>
+              <div>
+                <a href="https://danbennett.dev/worthie/" target="_blank"  class="live-link-text">Live Demo</a>
+              </div>
+
+              <div class="github-repo-image">
+                <a href="https://github.com/drbenn/worthie-fin-track" target="_blank">
+                  <img class="card-link-img githubIcon" src="./img/card/icons/github.png" alt="github repository">
+                </a>
+              </div>
+                
+              <div >
+                <a href="https://github.com/drbenn/worthie-fin-track" target="_blank" class="github-repo-text">Github Repository</a>
+              </div>
+
+              </div>
+
+            <div class="card-body-icons">
+              
+                <img class="card-icon" src="./img/card/icons/js.png" alt="javascript">
+      
+           
+                <img class="card-icon" src="./img/card/icons/nodejs.png" alt="nodejs">
+             
+            
+                <img class="card-icon" src="./img/card/icons/mysql.png" alt="mysql">
+             
+        
+                <img class="card-icon" src="./img/card/icons/bootstrap.png" alt="bootstrap">
+       
+      
+                <img class="card-icon" src="./img/card/icons/ejs.PNG" alt="ejs">
+         
+    
+                <div class="icon-text-link">Express</div>
+              </a>
+            </div>
+            </div>
+          </div>
+
+        <div class="card-view-wrapper">
+
+          <div class="card-tilt-container">
+              <div class="card-title">Dividend Tool</div>
+              <div class="card-subtitle">Dividend Rate Blender</div>
+              <div class="card-image">
+                <img src="./img/card/preview/dividend-rate-blender.png" />
+              </div>
+              <div class="card-body-links-grid">
+
+                <div class="live-link-image">
+                 
+                    <img  class="card-link-img liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+               
+                  </div>
+                <div >
+                  <a href="https://drbenn.github.io/dividend-rate-blender/" target="_blank" class="live-link-text">Live Demo</a>
+                </div>
+
+                <div class="github-repo-image">
+                  <a href="https://github.com/drbenn/dividend-rate-blender" target="_blank">
+                    <img class="card-link-img githubIcon" src="./img/card/icons/github.png" alt="github repository">
+                  </a>
+                </div>
+                  
+                <div>
+                  <a href="https://github.com/drbenn/dividend-rate-blender" target="_blank"  class="github-repo-text">Github Repository</a>
+                </div>
+
+                </div>
+
+              <div class="card-body-icons">
+             
+                  <img class="card-icon" src="./img/card/icons/js.png" alt="javascript">
+         
+           
+                  <img class="card-icon" src="./img/card/icons/html.png" alt="html">
+            
+                
+                  <img class="card-icon" src="./img/card/icons/css.png" alt="css">
+               
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="section-title">Past Projects</div>
+
+    <div class="past-projects">
+      <div class="past-project-container">
+
+        <div class="past-title">Retro Blackjack</div>
+        <div class="past-verticle-block">
+        <div class="past-group">
+          <div>
+            <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+          </div>
+          <div>
+            <a href="https://github.com/drbenn/retro-blackjack"  target="_blank">Github Repository</a>
+          </div>
+          </div>
+
+          <div class="past-group">
+          <div>
+            <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+          </div>
+          <div>
+            <a href="https://drbenn.github.io/retro-blackjack/" target="_blank" >Live Demo</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="past-project-container">
+        <div class="past-title">Store Front</div>
+        <div class="past-verticle-block">
+        <div class="past-group">
+          <div>
+            <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+          </div>
+          <div>
+            <a href="https://github.com/drbenn/dog-duds-store"  target="_blank">Github Repository</a>
+          </div>
+          </div>
+    
+          <div class="past-group">
+          <div>
+            <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+          </div>
+          <div>
+            <a href="https://drbenn.github.io/dog-duds-store/" target="_blank" >Live Demo</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="past-project-container">
+        <div class="past-title">Meme Generator</div>
+        <div class="past-verticle-block">
+        <div class="past-group">
+          <div>
+            <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+          </div>
+          <div>
+            <a href="https://github.com/drbenn/meme-generator"  target="_blank">Github Repository</a>
+          </div>
+          </div>
+    
+          <div class="past-group">
+          <div>
+            <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+          </div>
+          <div>
+            <a href="https://drbenn.github.io/meme-generator/" target="_blank" >Live Demo</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    
+      <div class="past-project-container">
+      <div class="past-title">Simple Mobile Portfolio</div>
+      <div class="past-verticle-block">
+      <div class="past-group">
+        <div>
+          <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+        </div>
+        <div>
+          <a href="https://github.com/drbenn/simple-mobile-portfolio"  target="_blank">Github Repository</a>
+        </div>
+        </div>
+
+        <div class="past-group">
+        <div>
+          <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+        </div>
+        <div>
+          <a href="https://drbenn.github.io/simple-mobile-portfolio/" target="_blank" >Live Demo</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="past-project-container" >
+        <div class="past-title">Landing Page</div>
+        <div class="past-verticle-block">
+        <div class="past-group">
+          <div>
+            <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+          </div>
+          <div>
+            <a href="https://github.com/drbenn/coming-soon-landing"  target="_blank">Github Repository</a>
+          </div>
+          </div>
+
+          <div class="past-group">
+          <div>
+            <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+          </div>
+          <div>
+            <a href="https://drbenn.github.io/coming-soon-landing/" target="_blank" id="contact">Live Demo</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="section-title" >Contact</div>
+
+  <form
+  action="https://formsubmit.co/9dd8a55d39485c4c6f3ea6602ac101c7"
+  method="POST"
+  >
+    <!-- RIGHT side of form -->
+    <div class="contact-container">
+      <div class="input-container">
+        <p class="placeholder">Your Name</p>
+        <input type="text" name="Name" autocomplete="off" class="input-name input" />
+        <!-- <svg
+          class="line-svg"
+          width="140"
+          height="2"
+          viewBox="0 0 300 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="elastic-line"
+            d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+            stroke="#D1D4DA"
+            stroke-width="2"
+          />
+        </svg> -->
+      </div>
+      <div class="input-container">
+        <p class="placeholder">Your Email</p>
+        <input type="email" name="Email" autocomplete="off" class="input-email input" />
+        <!-- <svg
+          class="line-svg"
+          width="340"
+          height="2"
+          viewBox="0 0 300 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="elastic-line"
+            d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+            stroke="#D1D4DA"
+            stroke-width="2"
+          />
+        </svg> -->
+      </div>
+      <div class="input-container">
+        <p class="placeholder">Your Message</p>
+        <input type="message" name="Message" autocomplete="off" class="input-message input" />
+        <!-- <svg
+          class="line-svg"
+          width="340"
+          height="2"
+          viewBox="0 0 300 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="elastic-line"
+            d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+            stroke="#D1D4DA"
+            stroke-width="2"
+          />
+        </svg> -->
+      </div>
+    </div>
+    <div class="form-button">
+    <button type="submit" class="btn">Send Message</button>
+  </div>
+  </form>
+
+  <footer>
+    <div>
+      danbennett.dev
+    </div>
+    <div class="footer-link-icons">
+      <div><a href="https://github.com/drbenn"><img src="./img/footer/github.png" alt="github"></a></div>
+      <div><a href="https://www.linkedin.com/in/bennettdanielr/"><img src="./img/footer/linkedin.png" alt="linkedin"></a></div>
+    </div>
+
+  </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
