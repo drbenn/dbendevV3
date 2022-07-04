@@ -545,21 +545,19 @@ a {
 
 .past-project-container:hover {
   transform: translate(0px, -10px);
-  transition: 0.5s all ease;
+  transition: 0.4s all ease;
   border: 2px solid var(--accent-bg);
   border-top: transparent;
-  opacity: 1;
 }
 
 .past-project-container:hover .past-title {
   background-color: var(--accent);
-  transition: 0.3s all ease;
+  transition: 0.4s all ease;
   color: var(--accent-text);
-  transform: translate(-1px, -10px) scale(1.03);
+  transform: translate(0px, -10px) scale(1.04);
   border-left: 1px solid var(--accent);
   border-right: 1px solid var(--accent);
   border-top: 1px solid var(--accent);
-  opacity: 1;
 }
 
 .past-group {

@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -49,20 +50,21 @@
 
 
     <div class="about" id="about">
-      <p class="about-text"><span class="text-accent">Hello, my name is Dan.</span><img src="./img/dan.png"  class="dan-img" alt="Dan"></p>
+      <p class="about-text"><span class="text-accent"  data-aos="zoom-in" data-aos-duration="1500">Hello, my name is Dan.</span><img src="./img/dan.png"  class="dan-img" alt="Dan"></p>
+      <div   data-aos="fade-up" data-aos-duration="1500">
       <p class="about-subtext">I am a software engineer concentrating on front-end applications and interactives.</p>
       <p class="about-subtext" id="projects">I like to create tools and new environments - currently focusing on the Angular framework.</p>
-      
+    </div>
     </div>
       
 
     <div class="featured-projects">
-    <div class="section-title" >Featured Projects</div>
+    <div class="section-title" data-aos="zoom-in" data-aos-duration="1500">Featured Projects</div>
 
 
    
       
-      <div class="portfolio-container">
+      <div class="portfolio-container" data-aos="zoom-out" data-aos-duration="1500">
 
 
 
@@ -242,9 +244,9 @@
 
     </div>
 
-    <div class="section-title">Past Projects</div>
+    <div class="section-title" data-aos="zoom-in" data-aos-duration="1500">Past Projects</div>
 
-    <div class="past-projects">
+    <div class="past-projects"  data-aos="zoom-out" data-aos-duration="1500">
       <div class="past-project-container">
 
         <div class="past-title">Retro Blackjack</div>
@@ -361,13 +363,39 @@
         </div>
       </div>
 
+      <div class="past-project-container" >
+        <div class="past-title">danbennett.dev</div>
+        <div class="past-verticle-block">
+        <div class="past-group">
+          <div>
+            <img class="past-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+          </div>
+          <div>
+            <a href="https://github.com/drbenn/dbendevV1"  target="_blank">V1</a>, 
+            <a href="https://github.com/drbenn/dbendevV2"  target="_blank">V2</a>
+          </div>
+          </div>
+
+          <div class="past-group">
+          <div>
+            <img class="past-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+          </div>
+          <div>
+            <a href="https://drbenn.github.io/dbendevV1/"  target="_blank">V1</a>, 
+            <a href="https://drbenn.github.io/dbendevV2/"  target="_blank">V2</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
   </div>
 
-  <div class="section-title" >Contact</div>
+  <div class="section-title"  data-aos="zoom-in" data-aos-duration="1500">Contact</div>
 
   <form
   action="https://formsubmit.co/9dd8a55d39485c4c6f3ea6602ac101c7"
   method="POST"
+  data-aos="zoom-out" data-aos-duration="1500"
   >
     <!-- RIGHT side of form -->
     <div class="contact-container">
@@ -435,7 +463,7 @@
   </form>
 
   <footer>
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="500">
       danbennett.dev
     </div>
     <div class="footer-link-icons">
@@ -452,5 +480,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
