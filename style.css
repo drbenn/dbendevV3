@@ -35,8 +35,8 @@
 :root {
   --primary-bg: rgb(255, 255, 255);
   --secondary-text: #1d1d1d;
-  --accent: #76c1b2;
-  --accent-bg: #76c1b2b3;
+  --accent: #acded3;
+  --accent-bg: #c9e8e1b3;
   --accent-text: var(--secondary-text);
   --hello-text: var(--secondary-text);
   --soft-alt: rgb(245, 245, 245);
@@ -46,6 +46,7 @@
   --card-shadow: rgba(100, 100, 100, 0.104);
   --soft-border: rgba(152, 152, 152, 0.185);
   --title-shadow: rgba(134, 128, 128, 0.398);
+  --featured-bg: #fafafa;
 }
 
 * {
@@ -82,8 +83,8 @@ body {
   --accent: #566c6d;
   --accent: #baa680;
   --accent: #baa8a6; */
-  --accent: #4d725b;
-  --accent-bg: #678874;
+  --accent: #5e7684;
+  --accent-bg: #2a373e;
   --accent-text: var(--secondary-text);
   --hello-text: var(--primary-bg);
   --soft-alt: rgb(156, 156, 156);
@@ -92,6 +93,7 @@ body {
   --card-bottom-grad: #0f0f0f;
   --card-shadow: rgba(0, 0, 0, 0.061);
   --soft-border: rgba(71, 71, 71, 0.298);
+  --featured-bg: #0c0e13;
 }
 
 /* NAVIGATION */
@@ -310,7 +312,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--accent-bg);
+  background-color: var(--featured-bg);
   padding-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -324,6 +326,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: calc(75px + 1vw) 0;
+  border: 2px solid yellow;
 }
 
 .featured-detail-text {
@@ -332,19 +335,20 @@ a {
 }
 
 .card-view-wrapper {
+  /* border: 2px solid red;
   perspective: 900px;
-  /* border: 2px solid red; */
+
   margin: 1rem;
   width: calc((250px + 4vw));
   height: calc((250px + 2vw));
-  transition: 0.5s all ease;
+  transition: 0.5s all ease; */
 }
 
 .card-tilt-container {
   width: calc(250px + 4vw);
   height: calc(480px + 2vw);
   transition: 0.3s all ease;
-  transform: rotateX(60deg) scale(0.9) translate(0px, calc(-300px - 5vw));
+  /* transform: rotateX(60deg) scale(0.9) translate(0px, calc(-300px - 5vw)); */
   perspective: 900px;
   box-shadow: 0px 20px 30px var(--card-shadow);
   animation: entry 1s linear 1;
@@ -390,6 +394,14 @@ a {
   filter: hue-rotate(0deg) grayscale(0);
   top: 200px;
   transition: 0s all ease;
+}
+
+.card-tilt-container:hover {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(0%, 0%);
 }
 
 .card-tilt-container:hover > .featured-detail-text {
