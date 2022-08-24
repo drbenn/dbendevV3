@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>danbennett.dev - blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <div class="lazy-link"><a href="danbennett.dev">danbennett.dev</a></div>
+
+    <div class="blog-title" data-aos="zoom-in" data-aos-duration="600">How to deploy NestJS server on NameCheap Connecting to MongoDB Atlas</div>
+
+
+
+    <div class="blog-section">
+
+        <div class="text-block">Ahh yes, so you've easily worked over 100 hours on a project and now want to deploy it on your NameCheap website? Your frontend and backend are working just fine on localhost, connecting to and doing CRUD updates with MongoDB Atlas. Should be pretty simple, right? WRONG!</p>
+
+        <p class="text-block">This is how I was able to finally get my MTLT NestJS server up and running on NameCheap</p>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    1. Add ".npmrc" file to root directory(where package.json is). The only thing in the file needs to be "scripts-prepend-node-path=true". Do not include the quotes.
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    2. Ensure package.json under scripts includes:
+                    "start:prod": "node dist/main", 
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    3. Ensure main.ts bootstrap function includes the option to connect to whichever available port instead of just 3000:
+                    <br><br>
+                    async function bootstrap() {
+                        <br>
+                        const app = await NestFactory.create(AppModule);
+                        <br>
+                        await app.listen(process.env.PORT || 3000);
+                        <br>
+                      }
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    4. Login to your MongoDB Atlas. Go to your Database, click connect, choose your driver, version and get the appropriate link to use. You will need to replace " < password > " with the password you created for your username.
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    5. In MongoDB Atlas. Go to Network access, youll need to look it up somewhere but find the actual IP address of your website. If you're feeling cheeky at the beginning and want to take out all chance of obstructions you can enable access to your database(if they have the appropriate password of course) from all websites, there is that option available.
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    6. Login to your NameCheap hosting. Go to file manager.create a new folder in the root directory(NOT in public html, this will be for your front end). In my example I created the folder 'mtlt'.
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    7. in project terminal "nest build"
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    8. Back to NameCheap file explorer. Go to new folder('mtlt'), upload the projects package.json and the newly created .npmrc file
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    9. Create a dist folder(so mtlt/dist) and drop all the files created in the dist folder from your Nest Build into that file. These files should include main.js.
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    10. In NameCheap Cpanel select "Setup Node.js App". Click "Create Application". Select Node version(latest!), change Application mode to "Production". Application root to 'mtlt'(the folder you created in the root directory). The application url the same, just 'mtlt'. The Application startup file will be "dist/main.js".
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    11. Click "Create", might take 15 seconds to complete. Click "Stop App". Click "Run NPM Install", this could take 15-30 seconds, might error, if it does, just try again(should work on second try). Once NPM installs click "Start App" 
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <div class="text-img-flex">
+            <div>
+                <p class="text-block">
+                    12. Check your new link...for me danbennett.dev/mtlt. AND SUCCESS!
+                </p>
+            </div>
+            <div class="blog-snip"><img src="" alt=""></div>
+        </div>
+
+        <p class="text-block"></p>
+        <p class="text-block"></p>
+        <p class="text-block"></p>
+        <p class="text-block"></p>
+        <p class="text-block"></p>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+    integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

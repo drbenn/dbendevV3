@@ -3,6 +3,7 @@
 const sunMoonImage = document.getElementById('darkModeImage');
 const aboutIcon = document.getElementById('aboutIcon');
 const projectsIcon = document.getElementById('projectsIcon');
+const blogIcon = document.getElementById('blogIcon');
 const contactIcon = document.getElementById('contactIcon');
 const githubIcon = document.querySelectorAll('.githubIcon');
 const liveLinkIcon = document.querySelectorAll('.liveLinkIcon');
@@ -13,6 +14,7 @@ function darkModeToggle() {
     sunMoonImage.style.filter = 'invert(1)';
     aboutIcon.style.filter = 'invert(1)';
     projectsIcon.style.filter = 'invert(1)';
+    blogIcon.style.filter = 'invert(1)';
     contactIcon.style.filter = 'invert(1)';
     githubIcon.forEach((element) => (element.style.filter = 'invert(1)'));
     liveLinkIcon.forEach((element) => (element.style.filter = 'invert(1)'));
@@ -21,6 +23,7 @@ function darkModeToggle() {
     sunMoonImage.style.filter = 'invert(0)';
     aboutIcon.style.filter = 'invert(0)';
     projectsIcon.style.filter = 'invert(0)';
+    blogIcon.style.filter = 'invert(1)';
     contactIcon.style.filter = 'invert(0)';
     githubIcon.forEach((element) => (element.style.filter = 'invert(0)'));
     liveLinkIcon.forEach((element) => (element.style.filter = 'invert(0)'));

@@ -29,6 +29,13 @@
       </span>
         </div>
         <div class="nav-link-group">
+          <a href="#blog">Blog</a>
+          <span class="nav-link-icon">
+            <a href="#blog"><img src="./img/nav/blogging.png" id="blogIcon" alt=""></a>
+            
+          </span>
+        </div>
+        <div class="nav-link-group">
         <a href="#contact">Contact</a>
         <span class="nav-link-icon">
           <a href="#contact"><img src="./img/nav/identification.png" id="contactIcon" alt=""></a>
@@ -62,6 +69,47 @@
     <div class="featured-projects">
      
       <div class="portfolio-container" data-aos="zoom-out" data-aos-duration="600">
+
+        <div class="featured-project-container">
+          <div class="featured-title">More Than Last Time</div>
+  
+          <div class="vertical-block">
+            <div class="featured-image">
+              <img src="./img/card/preview/mtlt.PNG" />
+            </div>
+  
+            <div class="featured-detail-text">
+              MTLT Fitness Tracker. A play on Greg Doucette's Harder Than Last Time mantra. I was tired of tracking gym workouts in Google Sheets, with my burgeoning Angular skills, thought I would tackle a new full-stack project wtih NestJS and Mongoose. Now while working out I can easily see the performance of my last attempt and best attempt without scrambling through a spreadsheet. Minimum viable alpha Released August 24, 2022 and updates ongoing.
+            </div>
+  
+            <div class="project-date-text">August 2022</div>
+  
+            <div class="git-group">
+              <div>
+                <img class="git-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+              </div>
+              <div>
+                <a href="https://github.com/drbenn/mtlt"  target="_blank">Github Repository</a>
+              </div>
+            </div>
+    
+            <div class="git-group">
+              <div>
+                <img class="git-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+              </div>
+              <div>
+                <a href="https://danbennett.dev/mtlt/" target="_blank" >Live Demo</a>
+              </div>
+            </div>
+  
+            <div class="tool-icons">  
+              <img class="tool-icon" src="./img/card/icons/angular.png" alt="angular">
+              <img class="tool-icon" src="./img/card/icons/typescript.png" alt="typescript">
+              <img class="tool-icon" src="./img/card/icons/nestjs.png" alt="nestJS">    
+              <img class="tool-icon" src="./img/card/icons/mongodb.png" alt="MongoDB"> 
+            </div>
+          </div>
+        </div>
 
 
       <div class="featured-project-container">
@@ -146,7 +194,7 @@
       </div>
 
 
-      <div class="featured-project-container">
+      <!-- <div class="featured-project-container">
         <div class="featured-title">Dividend Rate Blender</div>
 
         <div class="vertical-block">
@@ -184,7 +232,7 @@
             <img class="tool-icon" src="./img/card/icons/css.png" alt="css">    
           </div>
         </div>
-      </div>    
+      </div>     -->
 
     </div>
 
@@ -193,6 +241,66 @@
     <div class="section-title" data-aos="zoom-in" data-aos-duration="600">Past Projects</div>
 
     <div class="past-projects"  data-aos="zoom-out" data-aos-duration="600">
+
+
+      <div class="past-project-container">
+        <div class="past-title">Dividend Rate Blender</div>
+
+        <div class="vertical-block">
+          <!-- <div class="featured-image">
+            <img src="./img/card/preview/dividend-rate-blender.png" />
+          </div> -->
+
+          <!-- <div class="featured-detail-text">
+            A foray into publicly available API's. I was curious to what the overall dividend rate was of my dividend portfolio. Looking back now, it would have been nice to have an import feature with tickers and share quanities to improve ease of use.
+          </div> -->
+
+          
+
+          <div class="git-group">
+            <div>
+              <img class="git-project-icon githubIcon" src="./img/card/icons/github.png" alt="github repository" >
+            </div>
+            <div>
+              <a href="https://github.com/drbenn/dividend-rate-blender"  target="_blank">Github Repository</a>
+            </div>
+          </div>
+  
+          <div class="git-group">
+            <div>
+              <img class="git-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
+            </div>
+            <div>
+              <a href="https://drbenn.github.io/dividend-rate-blender/" target="_blank" >Live Demo</a>
+            </div>
+          </div>
+
+          <!-- <div class="tool-icons">  
+            <img class="tool-icon" src="./img/card/icons/js.png" alt="javascript">
+            <img class="tool-icon" src="./img/card/icons/html.png" alt="html">
+            <img class="tool-icon" src="./img/card/icons/css.png" alt="css">    
+          </div> -->
+
+          <div class="project-date-text">December 2021</div>
+        </div>
+      </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="past-project-container">
 
         <div class="past-title">Retro Blackjack</div>
@@ -307,7 +415,7 @@
             <img class="git-project-icon liveLinkIcon" src="./img/card/icons/icons8-linking-64.png" alt="live demo" id="liveLinkIcon">
           </div>
           <div>
-            <a href="https://drbenn.github.io/coming-soon-landing/" target="_blank" id="contact">Live Demo</a>
+            <a href="https://drbenn.github.io/coming-soon-landing/" target="_blank" id="blog">Live Demo</a>
           </div>
         </div>
         <div class="project-date-text">September 2021</div>
@@ -344,7 +452,15 @@
   </div>
 
 
-  <div class="section-title">Contact</div>
+  <div class="blog-container">
+  <div class="section-title" data-aos="zoom-in" data-aos-duration="600">Blog</div>
+  <div class="blog-link-container" data-aos="zoom-in" data-aos-duration="600">
+  <div class="blog-hover"><a href="blog/deploynestnamecheap.html">How to deploy NestJS server on NameCheap Connecting to MongoDB Atlas</a></div>
+  <div id="contact"></div>
+</div>
+</div>
+
+  <div class="section-title" >Contact</div>
 
   <form
   action="https://formsubmit.co/9dd8a55d39485c4c6f3ea6602ac101c7"
