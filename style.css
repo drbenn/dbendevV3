@@ -435,7 +435,7 @@ a {
   font-size: 12px;
   margin: 1.3rem 2rem;
   transform: scale(1);
-  color: black;
+  color: var(--contrast);
   opacity: 1;
   transition: 0.3s ease;
 }
