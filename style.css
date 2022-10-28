@@ -319,6 +319,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: calc(75px + 1vw) 0;
+  background-color: transparent;
 }
 
 
